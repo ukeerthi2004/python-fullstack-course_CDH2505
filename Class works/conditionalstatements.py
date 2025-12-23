@@ -45,8 +45,8 @@ data={
     'jikjkl': 'jh@657',
     'jhgfxxhjk': 'oi@1234',
     'oiusdfghjk': 't@34567'}
-us,pwd= input("enter the username:").split()
-if data.get(us)==pwd:
+us,password= input("enter the username:").split()
+if data.get(us)==password:
     print(f'hello {us}\n Your login successful!!!')
 else:
     print("Invalid login.\nTry again!!!")
