@@ -43,11 +43,11 @@ else:
     print("Unble send message")'''
 
 # Nested if example
-ct = int(input("enter the voter id:"))
+cgh = int(input("enter the voter id:"))
 id={123,345,456,678,987}
 age = int(input("Enter the age:"))
 
-if ct in id:
+if cgh in id:
     if age>=18:
         print( "Congrats,You can Vote")
     else:
