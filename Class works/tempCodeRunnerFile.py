@@ -1,0 +1,1 @@
+activities = set(input("Enter Activities (Sports NCC Music): ").split())
