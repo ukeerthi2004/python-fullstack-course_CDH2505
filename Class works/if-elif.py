@@ -51,7 +51,7 @@ if cgh in id:
     if age>=18:
         print( "Congrats,You can Vote")
     else:
-        print("You are under age")
+        print("You are age")
 else:
     print("you need to be Indian to vote")
 
