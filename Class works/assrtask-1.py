@@ -1,7 +1,7 @@
 # STUDENT ADMISSION SYSTEM – ALL DATA TYPES
 
 # String
-student_name = input("Enter Student Name: ")
+student_name1= input("Enter Student Name: ")
 
 # Integer
 student_id = int(input("Enter Student ID: "))
