@@ -1,50 +1,36 @@
-# ============================================================
-# REDBUS BOOKING SYSTEM – DEMONSTRATION OF ALL DATA TYPES
-# This program collects booking details from a RedBus user
+# REDBUS BOOKING SYSTEM
+# This program takes booking details from the user
 # and stores them using different Python data types.
-# ============================================================
 
-#Task -1
-# ---------------- STRING DATA TYPE ----------------
-# Used to store text data like passenger name
+#Task 1 - Take Product Details as Input from the User
+# Asking passenger name (text value)
 user_name = input("Enter Passenger Name: ")
 
 
-# ---------------- INTEGER DATA TYPE ----------------
-# Used to store whole numbers like booking ID
+# Taking booking ID (number without decimals)
 booking_id = int(input("Enter Booking ID: "))
 
 
-# ---------------- FLOAT DATA TYPE ----------------
-# Used to store decimal values like ticket price
+# Taking ticket price (can have decimal value)
 ticket_price = float(input("Enter Ticket Price: "))
 
 
-# ---------------- LIST DATA TYPE ----------------
-# Used to store multiple seat numbers
-# split() converts input string into a list
+# Taking seat numbers chosen by the user
+# split() helps to store each seat separately in a list
 seats = input("Enter Seat Numbers (A1 A2 B1): ").split()
 
 
-# ---------------- TUPLE DATA TYPE ----------------
-# Used to store fixed journey date (DD MM YYYY)
-# map(int, ...) converts each value to integer
-# tuple() stores the date as an immutable collection
-journey_date = tuple(
-    map(int, input("Enter Journey Date (DD MM YYYY): ").split())
-)
+# Taking journey date
+# Date is fixed, so we store it in a tuple
+journey_date = tuple(map(int, input("Enter Journey Date (DD MM YYYY): ").split()))
 
 
-# ---------------- SET DATA TYPE ----------------
-# Used to store unique facilities
-# Duplicate values are automatically removed
-facilities = set(
-    input("Enter Facilities (AC WiFi Sleeper): ").split()
-)
+# Taking facilities selected by the user
+# set is used so that duplicate facilities are not repeated
+facilities = set(input("Enter Facilities (AC WiFi Sleeper): ").split())
 
 
-# ---------------- DICTIONARY DATA TYPE ----------------
-# Used to store all booking details in key-value pairs
+# Storing all booking details in one place using dictionary
 booking_details = {
     "Name": user_name,
     "Booking ID": booking_id,
@@ -54,14 +40,13 @@ booking_details = {
     "Facilities": facilities
 }
 
-#Task -2
-# ---------------- OUTPUT SECTION ----------------
-# Printing heading for clarity
+#Task 2 - Display Booking Details using Different Print Methods
+
+# Displaying booking details
 print("\n--- REDBUS BOOKING DETAILS ---\n")
 
 
-# ---------------- COMMA SEPARATION PRINTING ----------------
-# sep=", " is used to separate values with comma
+# Printing main details using comma separation
 print("Name, Booking ID, Ticket Price",
     booking_details["Name"],
     booking_details["Booking ID"],
@@ -69,24 +54,23 @@ print("Name, Booking ID, Ticket Price",
     sep=", ")
 
 
-# ---------------- PERCENTAGE / NUMERIC FORMATTING ----------------
-# %.2f formats the ticket price to 2 decimal places
+# Printing ticket price with 2 decimal places
 print("Ticket Price: ₹%.2f" % booking_details["Ticket Price"])
 
 
-# ---------------- F-STRING FORMATTING ----------------
-# Used to display date in readable format
+# Showing journey date in DD-MM-YYYY format
 print(f"Journey Date: {journey_date[0]}-{journey_date[1]}-{journey_date[2]}")
 
-# Display list of seats
+
+# Showing seats selected by the passenger
 print(f"Seats Selected: {seats}")
 
-# Display selected facilities
+
+# Showing facilities selected
 print(f"Facilities Chosen: {facilities}")
 
 
-# ---------------- FORMAT() METHOD ----------------
-# Another way of formatting output
+# Printing passenger name and booking ID using format() method
 print("Passenger Name: {}, Booking ID: {}".format(
     booking_details["Name"],
     booking_details["Booking ID"]
