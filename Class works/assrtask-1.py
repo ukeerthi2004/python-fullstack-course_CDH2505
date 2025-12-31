@@ -32,10 +32,10 @@ print("\n--- STUDENT ADMISSION DETAILS ---\n")
 
 # Comma separation
 print("Name, ID, Percentage",
-      student_details["Name"],
-      student_details["ID"],
-      student_details["Percentage"],
-      sep=", ")
+    student_details["Name"],
+    student_details["ID"],
+    student_details["Percentage"],
+    sep=", ")
 
 # Percentage / numeric formatting
 print("Percentage: %.2f%%" % student_details["Percentage"])
