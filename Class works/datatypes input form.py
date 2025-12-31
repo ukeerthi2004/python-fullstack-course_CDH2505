@@ -1,58 +1,141 @@
-# 7 data types taking input
-#1 . String
-"""name = input('Enter the name:')
-print(name,type(name))"""
-# 2. integer
-'''age =  int(input("Enter the age : "))
-print(age,type(age))'''
-# 3. Float
-'''price = float(input('Enter the price :'))
-print(price,type(price))'''
-# 4. list in string
-'''names= input().split()
-print(names,type(names))'''
-# list method 2
-'''inte= list(map(int,input().split()))
-print(inte,type(inte))'''
-# list in float
-'''inte= list(map(float,input().split()))
-print(inte,type(inte))'''
-# 5.tuple
-'''inte= tuple(map(int,input().split()))
-print(inte,type(inte))'''
-# tuple in str
-'''names= tuple(input().split())
-print(names,type(names))'''
-# tuple in float
-'''inte=tuple(map(float,input().split()))
-print(inte,type(inte))'''
-# set
-'''inte= set(map(int,input().split()))
-print(inte,type(inte))'''
-# set in float
-'''inte= set(map(float,input().split()))
-print(inte,type(inte))'''
-# set in str
-'''names= set(input().split())
-print(names,type(names))'''
-# for all inputs
-"""data = eval(input())
-print(data,type(data))#sytexs enter cheyali
+# ============================================
+# PYTHON INPUT – ALL DATA TYPES
+# ============================================
+
+# --------------------------------------------
+# 1. STRING INPUT
+# --------------------------------------------
 """
-# for two inputs
-'''email,pwd = tuple(input().split())
-print(email,pwd)'''
-# print statment
-"""a=10
-b=18.3
-c="jiakna"
-print("a=",a,"b=",b,"c=",c,sep=' ')
-print("a=",a,"b=",b,"c=",c,sep='\n')
-print("a=",a,"b=",b,"c=",c,sep=' ',end=' ')
-print('a=%d b=%f c=%s'%(a,b,c))
-print('a={} b={} c={}'.format(a,b,c))
-print('a={} b={} c={}'.format(b,a,c))
-print('a={2} b={1} c={0}'.format(a,b,c))"""
+name = input('Enter the name: ')   # Takes input as string by default
+print(name, type(name))            # Prints value and its data type
+"""
 
+# --------------------------------------------
+# 2. INTEGER INPUT
+# --------------------------------------------
+'''
+age = int(input("Enter the age: "))  # Converts input string to integer
+print(age, type(age))
+'''
 
+# --------------------------------------------
+# 3. FLOAT INPUT
+# --------------------------------------------
+'''
+price = float(input('Enter the price: '))  # Converts input to float
+print(price, type(price))
+'''
 
+# --------------------------------------------
+# 4. LIST INPUTS
+# --------------------------------------------
+
+# List of strings
+'''
+names = input("Enter names: ").split()   # split() creates list of strings
+print(names, type(names))
+'''
+
+# List of integers
+'''
+inte = list(map(int, input("Enter numbers: ").split()))
+# map(int, ...) converts each value to int
+print(inte, type(inte))
+'''
+
+# List of floats
+'''
+inte = list(map(float, input("Enter float numbers: ").split()))
+print(inte, type(inte))
+'''
+
+# --------------------------------------------
+# 5. TUPLE INPUTS
+# --------------------------------------------
+
+# Tuple of integers
+'''
+inte = tuple(map(int, input("Enter numbers: ").split()))
+print(inte, type(inte))
+'''
+
+# Tuple of strings
+'''
+names = tuple(input("Enter names: ").split())
+print(names, type(names))
+'''
+
+# Tuple of floats
+'''
+inte = tuple(map(float, input("Enter float numbers: ").split()))
+print(inte, type(inte))
+'''
+
+# --------------------------------------------
+# 6. SET INPUTS
+# --------------------------------------------
+
+# Set of integers
+'''
+inte = set(map(int, input("Enter numbers: ").split()))
+# Set removes duplicate values automatically
+print(inte, type(inte))
+'''
+
+# Set of floats
+'''
+inte = set(map(float, input("Enter float numbers: ").split()))
+print(inte, type(inte))
+'''
+
+# Set of strings
+'''
+names = set(input("Enter names: ").split())
+print(names, type(names))
+'''
+
+# --------------------------------------------
+# 7. USING eval() FOR ANY DATA TYPE
+# --------------------------------------------
+"""
+data = eval(input("Enter any data type: "))
+# eval() automatically detects type (list, tuple, set, int, etc.)
+# ⚠️ Use carefully (not safe with unknown input)
+print(data, type(data))
+"""
+
+# --------------------------------------------
+# TAKING MULTIPLE INPUTS AT ONCE
+# --------------------------------------------
+'''
+email, pwd = tuple(input("Enter email and password: ").split())
+print(email, pwd)
+'''
+
+# --------------------------------------------
+# PRINT STATEMENT FORMATTING
+# --------------------------------------------
+"""
+a = 10
+b = 18.3
+c = "jiakna"
+
+# Using sep (separator)
+print("a=", a, "b=", b, "c=", c, sep=' ')
+print("a=", a, "b=", b, "c=", c, sep='\n')
+
+# Using end
+print("a=", a, "b=", b, "c=", c, end=' ')
+
+# Old-style formatting
+print('a=%d b=%f c=%s' % (a, b, c))
+
+# format() method
+print('a={} b={} c={}'.format(a, b, c))
+print('a={} b={} c={}'.format(b, a, c))
+print('a={2} b={1} c={0}'.format(a, b, c))
+"""
+
+# ============================================
+# END OF FILE
+# ============================================
