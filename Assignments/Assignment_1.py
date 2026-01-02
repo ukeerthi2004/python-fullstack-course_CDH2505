@@ -77,10 +77,18 @@ print("Passenger Name: {}, Booking ID: {}".format(
 ))
 #OUTPUT
 """
-Enter Passenger Name: Keerthi
-Enter Booking ID: 10245
-Enter Ticket Price: 850.5
-Enter Seat Numbers (A1 A2 B1): A1 A2 B1
-Enter Journey Date (DD MM YYYY): 15 01 2026
-Enter Facilities (AC WiFi Sleeper): AC WiFi
+--- REDBUS BOOKING DETAILS ---
+
+Name, Booking ID, Ticket Price, Keerthi, 10245, 850.5
+Ticket Price: ₹850.50
+Journey Date: 15-1-2026
+Seats Selected: ['A1', 'A2', 'B1']
+Facilities Chosen: {'AC', 'WiFi'}
+Passenger Name: Keerthi, Booking ID: 10245
+
+--- BOOKING DETAILS IN DICTIONARY FORMAT ---
+{'Name': 'Keerthi', 'Booking ID': 10245, 'Ticket Price': 850.5, 
+ 'Seats': ['A1', 'A2', 'B1'], 'Journey Date': (15, 1, 2026), 
+ 'Facilities': {'AC', 'WiFi'}}
+
 """
