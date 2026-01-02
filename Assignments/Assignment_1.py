@@ -75,3 +75,12 @@ print("Passenger Name: {}, Booking ID: {}".format(
     booking_details["Name"],
     booking_details["Booking ID"]
 ))
+#OUTPUT
+"""
+Enter Passenger Name: Keerthi
+Enter Booking ID: 10245
+Enter Ticket Price: 850.5
+Enter Seat Numbers (A1 A2 B1): A1 A2 B1
+Enter Journey Date (DD MM YYYY): 15 01 2026
+Enter Facilities (AC WiFi Sleeper): AC WiFi
+"""
