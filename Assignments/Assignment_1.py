@@ -88,7 +88,7 @@ Passenger Name: Keerthi, Booking ID: 10245
 
 --- BOOKING DETAILS IN DICTIONARY FORMAT ---
 {'Name': 'Keerthi', 'Booking ID': 10245, 'Ticket Price': 850.5, 
- 'Seats': ['A1', 'A2', 'B1'], 'Journey Date': (15, 1, 2026), 
- 'Facilities': {'AC', 'WiFi'}}
+'Seats': ['A1', 'A2', 'B1'], 'Journey Date': (15, 1, 2026), 
+'Facilities': {'AC', 'WiFi'}}
 
 """
