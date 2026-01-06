@@ -1,12 +1,5 @@
-'''data = {
-    2344 : {'balance':989000,'transtaionhistory' : []},
-    3445 : {'balance':6000,'transtaionhistory' : []},
-    4567 : {'balance':489000,'transtaionhistory' : []}
-}
-def checkbalnce(pin):
-    if pin in data:
-        print(f"(Balance amount : ${data[pin] ['balance']})")
-checkbalnce(3445)
+'''
+
 #pass by value
 def display(n):
     n[4]=16
@@ -31,7 +24,7 @@ def display(n):
     display(n-1)
 
 display(5)
-'''
+
 
 def pattern(ind):
     if ind ==len(s):
@@ -59,3 +52,4 @@ s='abcdef'
 w=int(input())
 pattern(s,w)
 
+'''
